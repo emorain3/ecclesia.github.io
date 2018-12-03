@@ -75,6 +75,10 @@ hr {
     margin-left: 3vw;
     padding: 0;
 }
+#nav > a:hover {
+    text-shadow: grey 0px 1px .5px;   
+}
+
 
 .mid-section {
     /* border: solid black; */
@@ -204,6 +208,10 @@ hr {
 
     border-left: solid black 50px;
     border-right: solid black 50px;
+}
+
+#pdf-link:hover {
+    color: ivory;
 }
 
 
