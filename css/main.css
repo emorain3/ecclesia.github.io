@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800,900');
+:root {
+    --bkgorange: #f28b53;
+    --lightorange: #f29767;
+    --lightestorange: #f4a87d;
+    --text-color: #f0ddaa;
+}
+
+html {
+    background-color:  var(--bkgorange);
+    font-family: 'Jura', sans-serif;
+    font-size: 1.75rem;
+    margin: 0;
+    color: #fff2ff;
+    /* text-shadow: black 0px 1px 1px,
+                darkslategrey 0px 1px 5px; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--lightestorange);
+}
+
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* height: 120vh; */
+}
+
+hr {
+    width: 90vw;
+    opacity: .3;
+    /* box-shadow: darkslategrey 0px 1px 5px; */
+}
+
+/* ====================== */
+/* ==  Website Layout == */
+/* ====================== */
+
+.head-section {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+
+    background-color: ivory;
+    box-shadow: rgb(47, 59, 59) 1px 1px 5px;
+
+    color: var(--lightestorange);
+    text-shadow: none;
+}
+
+#site-title {
+    display: flex;
+    align-items: center;
+
+    padding-left: 3vw;
+
+    font-family: 'Raleway', cursive;
+    font-weight: 900;
+}
+
+#nav {
+    /* border: solid aqua; */
+    display: flex;
+    justify-content: flex-end;
+
+    width: 70vw;
+    padding-right: 2vw; 
+}
+
+#nav > a {
+    /* border: solid green; */
+    margin-left: 3vw;
+    padding: 0;
+}
+
+.mid-section {
+    /* border: solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-section {
+    display: flex;
+    place-content: center;
+}
+
+#about-me {
+    width: 75vw;
+    font-size: .85rem;
+
+    color: var(--text-color);
+}
+
+.footer {
+    background-color: rgb(102, 84, 84);
+    width: 100vw;
+
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    
+    display: flex;
+    place-content: center;
+    /* align-self: flex-end; */
+    
+}
+
+#git-icon {
+    padding-top: .75vh;
+    padding-right: 2vw;
+}
+
+
+
+#item-description {
+    width: 75vw;
+    font-size: .85rem;
+
+    color: var(--text-color);
+}
+
+/* =================== */
+/* ==   Home Page   == */
+/* =================== */
+
+#quote-container {
+    width: 40vw;
+    padding-bottom: 10vh;
+    margin-top:5vh;
+    margin-left: -5vw;
+}
+#quote-icon {
+    position: absolute;
+}
+#homepage-quote {
+    /* border: solid chartreuse; */
+    position: relative;
+    top:50px;
+    left:130px;
+
+    font-size: 1.75rem;
+    font-family: 'Raleway', cursive;
+    font-weight: 900;
+
+    color: var(--lightestorange);
+}
+
+#quoted-from {
+    /* border: solid green; */
+    font-size: 1.5rem;
+    font-family: 'Raleway', cursive;
+    font-weight: 900;
+
+    color: var(--lightestorange);
+    text-align: right;
+    
+    margin-top: 10vh;
+    width: 50vw;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    border: inset ivory;
+    margin-top: -5vh;
+    margin-bottom: 5vh;
+}
+
+
+/* =================== */
+/* ==  Andoid Page  == */
+/* =================== */
+
+#item-title {
+    /* border: solid aqua; */
+    font-size: 1.75rem;
+    font-family: 'Raleway', cursive;
+    font-weight: 900;
+
+    padding-left: 1vw;
+
+    color: ivory;
+    text-shadow: darkslategrey 0px 1px 5px;
+}
+#item-intro {
+    /* border: solid chartreuse; */
+    font-size: 1.15rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    
+    color: ivory;
+    text-align: center;
+    text-shadow: darkslategrey 0px 1px 5px;
+    
+    margin-top: -2vh;
+    width: 50vw;
+}
+
+#ots-slides {
+    margin-top: 5vh;
+
+    border-left: solid black 50px;
+    border-right: solid black 50px;
+}
+
+
+/* ===================== */
+/* ==  Teaching Page  == */
+/* ===================== */
+
+#teaching-text-container {
+    width: 40vw;
+    padding-bottom: 10vh;
+    margin-top:5vh;
+    margin-left: 5vw;
+}
+
+#item-title-teaching {
+    /* border: solid aqua; */
+    font-size: 1.75rem;
+    font-family: 'Raleway', cursive;
+    font-weight: 900;
+
+    color: ivory;
+    text-shadow: darkslategrey 0px 1px 5px;
+}
+
+#item-intro-teaching {
+    /* border: solid chartreuse; */
+    font-size: 1.15rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    
+    color: ivory;
+    /* text-shadow: darkslategrey 0px 1px 5px; */
+    
+    margin-top: -2vh;
+    width: 35vw;
+}
+
+#ta-link:hover {
+    color: var(--text-color);
+}
+
+#pdf-embed-container {
+    margin-right: 5vw;
+}
+.footer-teaching {
+    background-color: rgb(102, 84, 84);
+    width: 100vw;
+
+    position: absolute;
+    bottom: -100vh;
+    margin: 0 auto;
+    
+    display: flex;
+    place-content: center;
+    /* align-self: flex-end; */
+    
+}
