@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Jura');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,800,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600,800,900');
 :root {
     --bkgorange: #f28b53;
     --lightorange: #f29767;
     --lightestorange: #f4a87d;
+    --linkcolor: #b64e11;
     --text-color: #f0ddaa;
 }
 
@@ -210,6 +211,9 @@ hr {
     border-right: solid black 50px;
 }
 
+#pdf-link {
+    color: var(--linkcolor);
+}
 #pdf-link:hover {
     color: ivory;
 }
@@ -240,7 +244,7 @@ hr {
     /* border: solid chartreuse; */
     font-size: 1.15rem;
     font-family: 'Raleway', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     
     color: ivory;
     /* text-shadow: darkslategrey 0px 1px 5px; */
@@ -249,7 +253,7 @@ hr {
     width: 35vw;
 }
 
-#ta-link:hover {
+.link:hover {
     color: var(--text-color);
 }
 
@@ -268,4 +272,105 @@ hr {
     place-content: center;
     /* align-self: flex-end; */
     
+}
+
+/* ================= */
+/* ==  Arch Page  == */
+/* ================= */
+
+
+.arch-mid-section {
+    /* border: solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 60vh;
+}
+
+#item-title-arch {
+    /* border: solid aqua; */
+    font-size: 1.75rem;
+    font-family: 'Raleway', cursive;
+    font-weight: 900;
+    
+    padding-left: 4vw;
+    
+    color: ivory;
+    text-shadow: darkslategrey 0px 1px 5px;
+}
+
+#arch-content-container {
+    display: flex;
+    /* border: solid chartreuse; */
+    justify-content: center;
+    height: 55vh;
+    
+}
+.hover-image {
+    position: absolute;
+
+    /* z-index: 0; */
+}
+
+.item-text {
+    /* border: solid chartreuse; */
+    position: absolute;
+    background-color: rgba(32, 32, 32, .8);
+
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    
+    color: ivory;
+    text-align: center;
+    text-shadow: darkslategrey 0px 1px 5px;
+    
+    margin-top: 0vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    width: 535px;
+
+    opacity: 0;
+}
+
+#assembler-text {
+    width: 735px;
+    padding-top: 6vh;
+    padding-left: 1.5vw;
+    padding-bottom: 11vh;
+}
+
+
+#fpga-caption {
+    position: relative;
+    top: 320px;
+    left: -15vw;
+    color: var(--linkcolor);
+}
+
+#assembler-caption {
+    position: relative;
+    top: 320px;
+    left: 12vw;
+    color: var(--linkcolor);
+
+}
+
+#fpga-image-container {
+    margin-left: -22vw;
+}
+
+#other-image-container {
+    margin-left: -2vw;
+}
+
+#fpga-image-container:hover  #fpga-text { 
+    opacity: 1;
+    transition: 300ms;
+}
+
+#other-image-container:hover  #assembler-text { 
+    opacity: 1;
+    transition: 300ms;
 }
